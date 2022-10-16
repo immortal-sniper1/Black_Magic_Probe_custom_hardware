@@ -1,0 +1,31 @@
+BMP SW uses about 120k storage (it can be lowered if certain MCUs are excluded but it will increse in the future as more MCU falimies are added)
+
+```the STM32F103 (and the GD32F103 clone) has 128kiB of Flash, the STM32F411 has 1MiB of Flash - these would both serve as suitable base platforms if you can get ahold of them```
+It can aparently run also on the blue pill (STM32F103C8T6A ) and black pill (STM32F411CEU6 Adafruit or DFrobot).
+
+
+
+
+
+MCU comparison:
+
+
+                   STM32F103C8T6A       STM32F411CEU6     GD32F103RET6 
+pack               LQFP-48             UFQFPN-48          LQFP-64
+max clock            72MHz              100MHz            108MHz
+min voltage       2V                     1.7V             2.6V
+min voltage       3.6V                    3.6V            3.6V
+GPIO              37                     36               51
+program FLASH      64k                    512k           512k
+RAM                20k                   128k            64k
+ARM core          M3                     M4              M3
+    
+Power:
+under normal operations the Black Magic Probe V2.1 is drawing 30-60mA up to 120mA.
+    
+https://lcsc.com/products/Microcontroller-Units-MCUs-MPUs-SOCs_11329.html?keyword=GD32F103
+
+https://lcsc.com/products/ST-Microelectronics_474.html
+
+https://ro.mouser.com/c/semiconductors/embedded-processors-controllers/microcontrollers-mcu/arm-microcontrollers-mcu/?m=STMicroelectronics&package%20%2F%20case=LQFP-48%7C~QFN-48%7C~UFQPFN-48~~UQFN-48&program%20memory%20size=128%20kB~~192%20kB%7C~256%20kB%7C~320%20kB%7C~384%20kB%7C~512%20kB%7C~768%20kB%7C~1%20MB%7C~1.5%20MB~~2%20MB&rp=semiconductors%2Fembedded-processors-controllers%2Fmicrocontrollers-mcu%2Farm-microcontrollers-mcu%7C~Program%20Memory%20Size%7C~Package%20%2F%20Case&sort=brand            
+                
